@@ -4,7 +4,7 @@ from config import token
 bot = telebot.TeleBot(token)
 
 
-def get_math_vaules(example):
+def get_math_vaules(example): #
     try:
         num1, znak, num2 = example.split(" ")
 
