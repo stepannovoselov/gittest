@@ -1,6 +1,6 @@
 import tkinter as tk
 
-window = tk.Tk()
+window = tk.Tk("TEST")
 
 c = tk.Canvas(window, height=400, width=600)
 c.pack()
