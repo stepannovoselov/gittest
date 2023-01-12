@@ -12,7 +12,7 @@ def math(first_num, znak, second_num):
     if znak == '-':
         return first_num - second_num
     if znak == '*':
-        return first_num * second_num
+        return first_num * second_num #
     if znak == '/':
         if second_num == 0:
             return "На ноль делить нельзя"
