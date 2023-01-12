@@ -28,7 +28,14 @@ def player_move(action):
 
 def keypress_handler(event):
     print("Pressed", event.keysym)
-
+    if event.char == 'w':
+        player_move('top')
+    if event.char == 's':
+        player_move('down')
+    if event.char == 'd':
+        player_move('right')
+    if event.char == 'a':
+        player_move('left')
 
 window.bind("<KeyPress>", keypress_handler)
 
