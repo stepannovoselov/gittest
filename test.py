@@ -13,10 +13,6 @@ def get_math_vaules(example):
         return []
 
 
-def solve_example(num1, znak, num2):
-    pass
-
-
 @bot.message_handler(content_types=["text"])
 def message_handler(message):
     pass
