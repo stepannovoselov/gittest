@@ -11,8 +11,6 @@ player = c.create_rectangle(100, 50, 150, 100, fill="red")
 def player_move(action):
     global player
 
-    x, y, x1, y1 = c.coords(player)
-
     if action == "top":
         c.move(player, 0, -10)
 
@@ -27,14 +25,16 @@ def player_move(action):
 
 
 def keypress_handler(event):
-    # print("Pressed", event.keysym)
     if event.char == 'w':
         player_move('top')
-    if event.char == 's':
+
+    elif event.char == 's':
         player_move('down')
-    if event.char == 'd':
+
+    elif event.char == 'd':
         player_move('right')
-    if event.char == 'a':
+
+    elif event.char == 'a':
         player_move('left')
 
 window.bind("<KeyPress>", keypress_handler)
